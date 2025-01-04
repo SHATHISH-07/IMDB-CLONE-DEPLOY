@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMDB-CLONE-BACKEND</title>
+    <link rel="icon" href="./favicon-16x16.png" type="image/x-icon" />
+
+    <style>
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 48px;
+        color: #333;
+        font-family: "Arial", sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+
+      .container1 {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.5rem;
+        margin-top: 4rem;
+      }
+
+      .container2 {
+        display: flex;
+        margin-top: 4rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>IMDB-CLONE-BACKEND</h1>
+    <div class="container1">
+      <div>
+        USER PATH
+        <ul>
+          <li>/api/users</li>
+          <li>GET/POST</li>
+        </ul>
+      </div>
+      <div>
+        LOGIN PATH
+        <ul>
+          <li>/api/login</li>
+          <li>POST</li>
+        </ul>
+      </div>
+      <div>
+        WATCHLIST PATH
+        <ul>
+          <li>/api/watchList</li>
+          <li>GET/POST/DELETE</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container2">
+      <div>
+        MOVIES PATH GET
+        <ul>
+          <li>/api/movie/genres</li>
+          <li>/api/movie/image/:id</li>
+          <li>/api/movie/video/:id</li>
+          <li>/api/movie/review/:id</li>
+          <li>/api/movie/now_playing?page</li>
+          <li>/api/movie/popular?page</li>
+          <li>/api/movie/recommend/:id?page</li>
+          <li>/api/movie/search/:id</li>
+          <li>/api/movie/search?query?page</li>
+          <li>/api/movie/top_rated?page</li>
+          <li>/api/movie/trending/day?page</li>
+          <li>/api/movie/trending/week?page</li>
+          <li>/api/movie/upcoming?page</li>
+          <li>/api/movie/credits/:id</li>
+          <li>/api/movie/collection/:id</li>
+        </ul>
+      </div>
+      <div>
+        TV SHOW PATH GET
+        <ul>
+          <li>/api/tv/genres</li>
+          <li>/api/tv/image/:id</li>
+          <li>/api/tv/video/:id</li>
+          <li>/api/tv/review/:id</li>
+          <li>/api/tv/now_playing?page</li>
+          <li>/api/tv/on_air?page</li>
+          <li>/api/tv/popular?page</li>
+          <li>/api/tv/recommend/:id?page</li>
+          <li>/api/tv/search/:id</li>
+          <li>/api/tv/search?query?page</li>
+          <li>/api/tv/top_rated?page</li>
+          <li>/api/tv/trending/day?page</li>
+          <li>/api/tv/trending/week?page</li>
+          <li>/api/tv/credits/:id</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

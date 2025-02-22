@@ -103,7 +103,7 @@ app.use("/api/person", personRouter);
 // Serve static frontend files
 app.use(express.static(path.join(__dirname, "dist")));
 
-/** 🛠 **Step 2: Handle React Routes After API Routes** */
+//Handle React Routes After API Routes
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });

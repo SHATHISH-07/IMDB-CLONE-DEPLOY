@@ -53,6 +53,14 @@ mongoose
     logger.error("error connecting to MongoDB:", error.message);
   });
 
+// Serve static files from the frontend 'dist' folder
+app.use(express.static(path.join(__dirname, "dist")));
+
+// Handle React/Vite routes
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
+});
+
 // user, login, watchList
 app.use("/api/users", userRouter);
 app.use("/api/login", loginRouter);
